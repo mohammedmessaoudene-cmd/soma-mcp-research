@@ -1,0 +1,124 @@
+{
+  "code_id": "52ad3953d38ac310fd520feceda665c89b057bffacb2d54d775968cde4a058f7",
+  "design_id": "4d6a1ae6a76f73e75ba35e26019f5015d8e113e9a2ab1efd6c9dd370db80f302",
+  "source_files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "2dfe0f1feae105cef524b262f1153b4a4f68823f353522649d727d5db89e8827"
+    },
+    {
+      "path": ".github/workflows/reproduce.yml",
+      "sha256": "695fcd9c6139994483aa94ae78cc17c2316411e7bfa7bcb79b40dccda052b716"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "802eabf60846efb3b7d1afff9038157d8d25f4a20a06c18bcf7ee35c045e33a8"
+    },
+    {
+      "path": "implementation/bridge_server.py",
+      "sha256": "0721b0290e609eff824b3f84727a6e432c73cac776709c9a29939d423b94a510"
+    },
+    {
+      "path": "implementation/crash_client.py",
+      "sha256": "6f064d39c5a3070b22e141e3733b421bf47ddab3eaf1012ed7ce536170416f46"
+    },
+    {
+      "path": "implementation/db.py",
+      "sha256": "9bc9a656e39583e57d14b8066eb5b983fa13095f84c4448a187a384ad55b7c1a"
+    },
+    {
+      "path": "implementation/fault_server.py",
+      "sha256": "8874f8d4f2d923f570d321895d2e7c389e7b672a21d1d9f744c72c3a0277be0f"
+    },
+    {
+      "path": "implementation/fixtures.py",
+      "sha256": "2e1de6d864b24c66e0bd7c67ac48c497a13c40c41f58639f9de7343acc80f471"
+    },
+    {
+      "path": "implementation/identity_r4.py",
+      "sha256": "b3248957ead9a55a383be5e24c0eee22e57e0739613aceec7faf63b54ef9973d"
+    },
+    {
+      "path": "implementation/integrity_oracle.py",
+      "sha256": "118d1b0e0c5c9b612311d96c6a19c76fdccfe2d8b77c76371dd3bd4da8681dd0"
+    },
+    {
+      "path": "implementation/migration.sql",
+      "sha256": "26e13ae596fc34f9f96ac31ad53d2af98c91cd23c0e71f4f64663b8641740c10"
+    },
+    {
+      "path": "implementation/pilot.py",
+      "sha256": "78504b4a7cd3170940e45fa34ee709b0816db9cce1ce7e3628cf8b010f886fe0"
+    },
+    {
+      "path": "implementation/provision.py",
+      "sha256": "febe9099abdac99673de08ad1919a8654b939510427e8cc26909c500658cae3d"
+    },
+    {
+      "path": "implementation/publication_audit.py",
+      "sha256": "2d687f37035179a552c7ded4f975f6fa7ed1c38122385325da59562cde4fe20c"
+    },
+    {
+      "path": "implementation/receiver.py",
+      "sha256": "25cfef19a453fe627429336b33cce57b84b3554944c2e5840fd542f94bb67318"
+    },
+    {
+      "path": "implementation/recovery_client.py",
+      "sha256": "56851b49818ac508ba7f697675541b178d281bf52c0fd600e68f0175a417256a"
+    },
+    {
+      "path": "implementation/reproduce.ps1",
+      "sha256": "88c644c2cffa18af2a00b5fe2085b26ce57cdb05d235b0c270ebc5c34083c16f"
+    },
+    {
+      "path": "implementation/requirements.txt",
+      "sha256": "daf095191f1090320b4021ef46502ab64f8d7b230df2d5d88cd9f45448027ac2"
+    },
+    {
+      "path": "implementation/run_r4.py",
+      "sha256": "b106856739fa73b787303be0ca60e4d67fdc7430a3aa30e604341c6d5c8df79c"
+    },
+    {
+      "path": "implementation/server.py",
+      "sha256": "009fcb0a0fe8d7aca51b84c137a29c9bb6d0fa02beaa88b86557c1b832c4c43f"
+    },
+    {
+      "path": "implementation/task_oracle.py",
+      "sha256": "4ba527bac7816e9aec7e43dab26c4a64cc16ed81a9763cff45f4dcb974141570"
+    },
+    {
+      "path": "implementation/test_integration.py",
+      "sha256": "33108278135076a27e83a3b3ea4ee307a502327290bf67a4e906dc56ea0884e4"
+    },
+    {
+      "path": "implementation/test_r4.py",
+      "sha256": "b1932ad9f0a0038fb2f7302c99689237bf36c5d94a39bb816bb8a2fe22198a9f"
+    },
+    {
+      "path": "implementation/verify_dependencies.py",
+      "sha256": "97b8278fe2545b1b4880dd92e3d3b12c3df5b563aec1d09b64ecd7d2f47f48dc"
+    },
+    {
+      "path": "implementation/worker.py",
+      "sha256": "8e661cc377148eca7b07a52bf028538c0c772898ed296019f3634d42603269d4"
+    }
+  ],
+  "design_files": [
+    {
+      "path": "spec/ACCEPTANCE_R4.json",
+      "sha256": "dee7e1c1c5b35ddc739ecfc961f5fa3a35d0bc855c4a07dee5da78979f5dca36"
+    },
+    {
+      "path": "spec/PILOT_FIXTURES.json",
+      "sha256": "60be8060bfa586aad45fdd0cb3daea59b1e6d596c08e22112ea84dd7bd5d0e58"
+    },
+    {
+      "path": "spec/R4_CONTRACT.md",
+      "sha256": "51ddd276f5b874a6434cbe15a23d509cfa73961c0d2f76a895dae0bb1be79320"
+    },
+    {
+      "path": "spec/adjust_allocation.schema.json",
+      "sha256": "52a40f6ca8a0be0541bffee3e0247dd30000505632af33c808815a56c57fe008"
+    }
+  ]
+}

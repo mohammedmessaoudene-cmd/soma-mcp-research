@@ -1,0 +1,1140 @@
+{
+  "revision": 1,
+  "declared_before_pilot_execution": true,
+  "proposed_deltas": [
+    4,
+    4,
+    4,
+    -3,
+    6,
+    -4,
+    8,
+    -5,
+    2,
+    -2,
+    1,
+    -1
+  ],
+  "initial": {
+    "account_a": 40,
+    "account_b": 50,
+    "total": 90,
+    "cap": 100,
+    "version": 0,
+    "spent": 0,
+    "held": 0,
+    "unknown": 0,
+    "policy_version": 1,
+    "accounts_per_tenant": 128
+  },
+  "scenarios": {
+    "steady": {
+      "events": [],
+      "budget": 10000,
+      "expected_outcomes": [
+        {
+          "step": 0,
+          "status": "COMMITTED",
+          "delta": 4,
+          "version": 1
+        },
+        {
+          "step": 1,
+          "status": "COMMITTED",
+          "delta": 4,
+          "version": 2
+        },
+        {
+          "step": 2,
+          "status": "COMMITTED",
+          "delta": 2,
+          "version": 3
+        },
+        {
+          "step": 3,
+          "status": "COMMITTED",
+          "delta": -3,
+          "version": 4
+        },
+        {
+          "step": 4,
+          "status": "COMMITTED",
+          "delta": 3,
+          "version": 5
+        },
+        {
+          "step": 5,
+          "status": "COMMITTED",
+          "delta": -4,
+          "version": 6
+        },
+        {
+          "step": 6,
+          "status": "COMMITTED",
+          "delta": 4,
+          "version": 7
+        },
+        {
+          "step": 7,
+          "status": "COMMITTED",
+          "delta": -5,
+          "version": 8
+        },
+        {
+          "step": 8,
+          "status": "COMMITTED",
+          "delta": 2,
+          "version": 9
+        },
+        {
+          "step": 9,
+          "status": "COMMITTED",
+          "delta": -2,
+          "version": 10
+        },
+        {
+          "step": 10,
+          "status": "COMMITTED",
+          "delta": 1,
+          "version": 11
+        },
+        {
+          "step": 11,
+          "status": "COMMITTED",
+          "delta": -1,
+          "version": 12
+        }
+      ],
+      "expected_checkpoints": [
+        {
+          "step": 0,
+          "account_a": 44,
+          "account_b": 50,
+          "total": 94,
+          "version": 1,
+          "spent": 0,
+          "held": 60,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 1,
+          "account_a": 48,
+          "account_b": 50,
+          "total": 98,
+          "version": 2,
+          "spent": 0,
+          "held": 120,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 2,
+          "account_a": 50,
+          "account_b": 50,
+          "total": 100,
+          "version": 3,
+          "spent": 0,
+          "held": 180,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 3,
+          "account_a": 47,
+          "account_b": 50,
+          "total": 97,
+          "version": 4,
+          "spent": 0,
+          "held": 240,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 4,
+          "account_a": 50,
+          "account_b": 50,
+          "total": 100,
+          "version": 5,
+          "spent": 0,
+          "held": 300,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 5,
+          "account_a": 46,
+          "account_b": 50,
+          "total": 96,
+          "version": 6,
+          "spent": 0,
+          "held": 360,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 6,
+          "account_a": 50,
+          "account_b": 50,
+          "total": 100,
+          "version": 7,
+          "spent": 0,
+          "held": 420,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 7,
+          "account_a": 45,
+          "account_b": 50,
+          "total": 95,
+          "version": 8,
+          "spent": 0,
+          "held": 480,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 8,
+          "account_a": 47,
+          "account_b": 50,
+          "total": 97,
+          "version": 9,
+          "spent": 0,
+          "held": 540,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 9,
+          "account_a": 45,
+          "account_b": 50,
+          "total": 95,
+          "version": 10,
+          "spent": 0,
+          "held": 600,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 10,
+          "account_a": 46,
+          "account_b": 50,
+          "total": 96,
+          "version": 11,
+          "spent": 0,
+          "held": 660,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 11,
+          "account_a": 45,
+          "account_b": 50,
+          "total": 95,
+          "version": 12,
+          "spent": 0,
+          "held": 720,
+          "unknown": 0,
+          "policy_version": 1
+        }
+      ],
+      "reset": "Complete SQL fixture reset and NEW receiver file before each session"
+    },
+    "peer_changes": {
+      "events": [
+        {
+          "at": 3,
+          "kind": "peer",
+          "account": "allocation_b",
+          "delta": -1
+        },
+        {
+          "at": 7,
+          "kind": "peer",
+          "account": "allocation_b",
+          "delta": -1
+        }
+      ],
+      "budget": 10000,
+      "expected_outcomes": [
+        {
+          "step": 0,
+          "status": "COMMITTED",
+          "delta": 4,
+          "version": 1
+        },
+        {
+          "step": 1,
+          "status": "COMMITTED",
+          "delta": 4,
+          "version": 2
+        },
+        {
+          "step": 2,
+          "status": "COMMITTED",
+          "delta": 2,
+          "version": 3
+        },
+        {
+          "step": 3,
+          "status": "COMMITTED",
+          "delta": -3,
+          "version": 5
+        },
+        {
+          "step": 4,
+          "status": "COMMITTED",
+          "delta": 4,
+          "version": 6
+        },
+        {
+          "step": 5,
+          "status": "COMMITTED",
+          "delta": -4,
+          "version": 7
+        },
+        {
+          "step": 6,
+          "status": "COMMITTED",
+          "delta": 4,
+          "version": 8
+        },
+        {
+          "step": 7,
+          "status": "COMMITTED",
+          "delta": -5,
+          "version": 10
+        },
+        {
+          "step": 8,
+          "status": "COMMITTED",
+          "delta": 2,
+          "version": 11
+        },
+        {
+          "step": 9,
+          "status": "COMMITTED",
+          "delta": -2,
+          "version": 12
+        },
+        {
+          "step": 10,
+          "status": "COMMITTED",
+          "delta": 1,
+          "version": 13
+        },
+        {
+          "step": 11,
+          "status": "COMMITTED",
+          "delta": -1,
+          "version": 14
+        }
+      ],
+      "expected_checkpoints": [
+        {
+          "step": 0,
+          "account_a": 44,
+          "account_b": 50,
+          "total": 94,
+          "version": 1,
+          "spent": 0,
+          "held": 60,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 1,
+          "account_a": 48,
+          "account_b": 50,
+          "total": 98,
+          "version": 2,
+          "spent": 0,
+          "held": 120,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 2,
+          "account_a": 50,
+          "account_b": 50,
+          "total": 100,
+          "version": 3,
+          "spent": 0,
+          "held": 180,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 3,
+          "account_a": 47,
+          "account_b": 49,
+          "total": 96,
+          "version": 5,
+          "spent": 0,
+          "held": 300,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 4,
+          "account_a": 51,
+          "account_b": 49,
+          "total": 100,
+          "version": 6,
+          "spent": 0,
+          "held": 360,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 5,
+          "account_a": 47,
+          "account_b": 49,
+          "total": 96,
+          "version": 7,
+          "spent": 0,
+          "held": 420,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 6,
+          "account_a": 51,
+          "account_b": 49,
+          "total": 100,
+          "version": 8,
+          "spent": 0,
+          "held": 480,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 7,
+          "account_a": 46,
+          "account_b": 48,
+          "total": 94,
+          "version": 10,
+          "spent": 0,
+          "held": 600,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 8,
+          "account_a": 48,
+          "account_b": 48,
+          "total": 96,
+          "version": 11,
+          "spent": 0,
+          "held": 660,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 9,
+          "account_a": 46,
+          "account_b": 48,
+          "total": 94,
+          "version": 12,
+          "spent": 0,
+          "held": 720,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 10,
+          "account_a": 47,
+          "account_b": 48,
+          "total": 95,
+          "version": 13,
+          "spent": 0,
+          "held": 780,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 11,
+          "account_a": 46,
+          "account_b": 48,
+          "total": 94,
+          "version": 14,
+          "spent": 0,
+          "held": 840,
+          "unknown": 0,
+          "policy_version": 1
+        }
+      ],
+      "reset": "Complete SQL fixture reset and NEW receiver file before each session"
+    },
+    "replay_after_peer": {
+      "events": [
+        {
+          "at": 2,
+          "kind": "peer",
+          "account": "allocation_b",
+          "delta": -1
+        },
+        {
+          "at": 2,
+          "kind": "replay",
+          "task": 0
+        }
+      ],
+      "budget": 10000,
+      "expected_outcomes": [
+        {
+          "step": 0,
+          "status": "COMMITTED",
+          "delta": 4,
+          "version": 1
+        },
+        {
+          "step": 1,
+          "status": "COMMITTED",
+          "delta": 4,
+          "version": 2
+        },
+        {
+          "step": 2,
+          "status": "COMMITTED",
+          "delta": 3,
+          "version": 4
+        },
+        {
+          "step": 3,
+          "status": "COMMITTED",
+          "delta": -3,
+          "version": 5
+        },
+        {
+          "step": 4,
+          "status": "COMMITTED",
+          "delta": 3,
+          "version": 6
+        },
+        {
+          "step": 5,
+          "status": "COMMITTED",
+          "delta": -4,
+          "version": 7
+        },
+        {
+          "step": 6,
+          "status": "COMMITTED",
+          "delta": 4,
+          "version": 8
+        },
+        {
+          "step": 7,
+          "status": "COMMITTED",
+          "delta": -5,
+          "version": 9
+        },
+        {
+          "step": 8,
+          "status": "COMMITTED",
+          "delta": 2,
+          "version": 10
+        },
+        {
+          "step": 9,
+          "status": "COMMITTED",
+          "delta": -2,
+          "version": 11
+        },
+        {
+          "step": 10,
+          "status": "COMMITTED",
+          "delta": 1,
+          "version": 12
+        },
+        {
+          "step": 11,
+          "status": "COMMITTED",
+          "delta": -1,
+          "version": 13
+        }
+      ],
+      "expected_checkpoints": [
+        {
+          "step": 0,
+          "account_a": 44,
+          "account_b": 50,
+          "total": 94,
+          "version": 1,
+          "spent": 0,
+          "held": 60,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 1,
+          "account_a": 48,
+          "account_b": 50,
+          "total": 98,
+          "version": 2,
+          "spent": 0,
+          "held": 120,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 2,
+          "account_a": 51,
+          "account_b": 49,
+          "total": 100,
+          "version": 4,
+          "spent": 0,
+          "held": 240,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 3,
+          "account_a": 48,
+          "account_b": 49,
+          "total": 97,
+          "version": 5,
+          "spent": 0,
+          "held": 300,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 4,
+          "account_a": 51,
+          "account_b": 49,
+          "total": 100,
+          "version": 6,
+          "spent": 0,
+          "held": 360,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 5,
+          "account_a": 47,
+          "account_b": 49,
+          "total": 96,
+          "version": 7,
+          "spent": 0,
+          "held": 420,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 6,
+          "account_a": 51,
+          "account_b": 49,
+          "total": 100,
+          "version": 8,
+          "spent": 0,
+          "held": 480,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 7,
+          "account_a": 46,
+          "account_b": 49,
+          "total": 95,
+          "version": 9,
+          "spent": 0,
+          "held": 540,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 8,
+          "account_a": 48,
+          "account_b": 49,
+          "total": 97,
+          "version": 10,
+          "spent": 0,
+          "held": 600,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 9,
+          "account_a": 46,
+          "account_b": 49,
+          "total": 95,
+          "version": 11,
+          "spent": 0,
+          "held": 660,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 10,
+          "account_a": 47,
+          "account_b": 49,
+          "total": 96,
+          "version": 12,
+          "spent": 0,
+          "held": 720,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 11,
+          "account_a": 46,
+          "account_b": 49,
+          "total": 95,
+          "version": 13,
+          "spent": 0,
+          "held": 780,
+          "unknown": 0,
+          "policy_version": 1
+        }
+      ],
+      "reset": "Complete SQL fixture reset and NEW receiver file before each session"
+    },
+    "unknown_budget": {
+      "events": [
+        {
+          "at": 1,
+          "kind": "unknown",
+          "task": 0
+        },
+        {
+          "at": 3,
+          "kind": "settle",
+          "task": 0
+        },
+        {
+          "at": 5,
+          "kind": "unknown",
+          "task": 3
+        },
+        {
+          "at": 7,
+          "kind": "settle",
+          "task": 3
+        }
+      ],
+      "budget": 100,
+      "expected_outcomes": [
+        {
+          "step": 0,
+          "status": "COMMITTED",
+          "delta": 4,
+          "version": 1
+        },
+        {
+          "step": 1,
+          "status": "SKIPPED_BUDGET",
+          "delta": 0
+        },
+        {
+          "step": 2,
+          "status": "SKIPPED_BUDGET",
+          "delta": 0
+        },
+        {
+          "step": 3,
+          "status": "COMMITTED",
+          "delta": -3,
+          "version": 2
+        },
+        {
+          "step": 4,
+          "status": "SKIPPED_BUDGET",
+          "delta": 0
+        },
+        {
+          "step": 5,
+          "status": "SKIPPED_BUDGET",
+          "delta": 0
+        },
+        {
+          "step": 6,
+          "status": "SKIPPED_BUDGET",
+          "delta": 0
+        },
+        {
+          "step": 7,
+          "status": "SKIPPED_BUDGET",
+          "delta": 0
+        },
+        {
+          "step": 8,
+          "status": "SKIPPED_BUDGET",
+          "delta": 0
+        },
+        {
+          "step": 9,
+          "status": "SKIPPED_BUDGET",
+          "delta": 0
+        },
+        {
+          "step": 10,
+          "status": "SKIPPED_BUDGET",
+          "delta": 0
+        },
+        {
+          "step": 11,
+          "status": "SKIPPED_BUDGET",
+          "delta": 0
+        }
+      ],
+      "expected_checkpoints": [
+        {
+          "step": 0,
+          "account_a": 44,
+          "account_b": 50,
+          "total": 94,
+          "version": 1,
+          "spent": 0,
+          "held": 60,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 1,
+          "account_a": 44,
+          "account_b": 50,
+          "total": 94,
+          "version": 1,
+          "spent": 0,
+          "held": 0,
+          "unknown": 60,
+          "policy_version": 1
+        },
+        {
+          "step": 2,
+          "account_a": 44,
+          "account_b": 50,
+          "total": 94,
+          "version": 1,
+          "spent": 0,
+          "held": 0,
+          "unknown": 60,
+          "policy_version": 1
+        },
+        {
+          "step": 3,
+          "account_a": 41,
+          "account_b": 50,
+          "total": 91,
+          "version": 2,
+          "spent": 40,
+          "held": 60,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 4,
+          "account_a": 41,
+          "account_b": 50,
+          "total": 91,
+          "version": 2,
+          "spent": 40,
+          "held": 60,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 5,
+          "account_a": 41,
+          "account_b": 50,
+          "total": 91,
+          "version": 2,
+          "spent": 40,
+          "held": 0,
+          "unknown": 60,
+          "policy_version": 1
+        },
+        {
+          "step": 6,
+          "account_a": 41,
+          "account_b": 50,
+          "total": 91,
+          "version": 2,
+          "spent": 40,
+          "held": 0,
+          "unknown": 60,
+          "policy_version": 1
+        },
+        {
+          "step": 7,
+          "account_a": 41,
+          "account_b": 50,
+          "total": 91,
+          "version": 2,
+          "spent": 80,
+          "held": 0,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 8,
+          "account_a": 41,
+          "account_b": 50,
+          "total": 91,
+          "version": 2,
+          "spent": 80,
+          "held": 0,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 9,
+          "account_a": 41,
+          "account_b": 50,
+          "total": 91,
+          "version": 2,
+          "spent": 80,
+          "held": 0,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 10,
+          "account_a": 41,
+          "account_b": 50,
+          "total": 91,
+          "version": 2,
+          "spent": 80,
+          "held": 0,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 11,
+          "account_a": 41,
+          "account_b": 50,
+          "total": 91,
+          "version": 2,
+          "spent": 80,
+          "held": 0,
+          "unknown": 0,
+          "policy_version": 1
+        }
+      ],
+      "reset": "Complete SQL fixture reset and NEW receiver file before each session"
+    },
+    "revocation": {
+      "events": [
+        {
+          "at": 4,
+          "kind": "enabled",
+          "value": false
+        },
+        {
+          "at": 8,
+          "kind": "enabled",
+          "value": true
+        }
+      ],
+      "budget": 10000,
+      "expected_outcomes": [
+        {
+          "step": 0,
+          "status": "COMMITTED",
+          "delta": 4,
+          "version": 1
+        },
+        {
+          "step": 1,
+          "status": "COMMITTED",
+          "delta": 4,
+          "version": 2
+        },
+        {
+          "step": 2,
+          "status": "COMMITTED",
+          "delta": 2,
+          "version": 3
+        },
+        {
+          "step": 3,
+          "status": "COMMITTED",
+          "delta": -3,
+          "version": 4
+        },
+        {
+          "step": 4,
+          "status": "NOT_AUTHORIZED",
+          "delta": 0
+        },
+        {
+          "step": 5,
+          "status": "NOT_AUTHORIZED",
+          "delta": 0
+        },
+        {
+          "step": 6,
+          "status": "NOT_AUTHORIZED",
+          "delta": 0
+        },
+        {
+          "step": 7,
+          "status": "NOT_AUTHORIZED",
+          "delta": 0
+        },
+        {
+          "step": 8,
+          "status": "COMMITTED",
+          "delta": 2,
+          "version": 5
+        },
+        {
+          "step": 9,
+          "status": "COMMITTED",
+          "delta": -2,
+          "version": 6
+        },
+        {
+          "step": 10,
+          "status": "COMMITTED",
+          "delta": 1,
+          "version": 7
+        },
+        {
+          "step": 11,
+          "status": "COMMITTED",
+          "delta": -1,
+          "version": 8
+        }
+      ],
+      "expected_checkpoints": [
+        {
+          "step": 0,
+          "account_a": 44,
+          "account_b": 50,
+          "total": 94,
+          "version": 1,
+          "spent": 0,
+          "held": 60,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 1,
+          "account_a": 48,
+          "account_b": 50,
+          "total": 98,
+          "version": 2,
+          "spent": 0,
+          "held": 120,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 2,
+          "account_a": 50,
+          "account_b": 50,
+          "total": 100,
+          "version": 3,
+          "spent": 0,
+          "held": 180,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 3,
+          "account_a": 47,
+          "account_b": 50,
+          "total": 97,
+          "version": 4,
+          "spent": 0,
+          "held": 240,
+          "unknown": 0,
+          "policy_version": 1
+        },
+        {
+          "step": 4,
+          "account_a": 47,
+          "account_b": 50,
+          "total": 97,
+          "version": 4,
+          "spent": 0,
+          "held": 240,
+          "unknown": 0,
+          "policy_version": 2
+        },
+        {
+          "step": 5,
+          "account_a": 47,
+          "account_b": 50,
+          "total": 97,
+          "version": 4,
+          "spent": 0,
+          "held": 240,
+          "unknown": 0,
+          "policy_version": 2
+        },
+        {
+          "step": 6,
+          "account_a": 47,
+          "account_b": 50,
+          "total": 97,
+          "version": 4,
+          "spent": 0,
+          "held": 240,
+          "unknown": 0,
+          "policy_version": 2
+        },
+        {
+          "step": 7,
+          "account_a": 47,
+          "account_b": 50,
+          "total": 97,
+          "version": 4,
+          "spent": 0,
+          "held": 240,
+          "unknown": 0,
+          "policy_version": 2
+        },
+        {
+          "step": 8,
+          "account_a": 49,
+          "account_b": 50,
+          "total": 99,
+          "version": 5,
+          "spent": 0,
+          "held": 300,
+          "unknown": 0,
+          "policy_version": 3
+        },
+        {
+          "step": 9,
+          "account_a": 47,
+          "account_b": 50,
+          "total": 97,
+          "version": 6,
+          "spent": 0,
+          "held": 360,
+          "unknown": 0,
+          "policy_version": 3
+        },
+        {
+          "step": 10,
+          "account_a": 48,
+          "account_b": 50,
+          "total": 98,
+          "version": 7,
+          "spent": 0,
+          "held": 420,
+          "unknown": 0,
+          "policy_version": 3
+        },
+        {
+          "step": 11,
+          "account_a": 47,
+          "account_b": 50,
+          "total": 97,
+          "version": 8,
+          "spent": 0,
+          "held": 480,
+          "unknown": 0,
+          "policy_version": 3
+        }
+      ],
+      "reset": "Complete SQL fixture reset and NEW receiver file before each session"
+    }
+  }
+}

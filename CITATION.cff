@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Please cite the exact research release and source identifiers."
+title: "SOMA: transactional MCP quota research"
+type: software
+authors:
+  - name: "mohammedmessaoudene-cmd"
+version: "0.4.0-research"
+date-released: 2026-11-14

@@ -1,0 +1,56 @@
+{
+  "version": "0.5.0-research",
+  "code_id": "523e015c66dfdbf7c340837db2a3341e7c45b04a605221f2a893cd9782d60cc7",
+  "kit_files": {
+    "kit/ADAPTER_API.md": "c09fd6b79b49594ee0d2ea80163069a8c9a4f5511f61a61974e7cbafcb906317",
+    "kit/directory_patch.py": "a1c4b1ba8825c6ca5c368991727e839014f85bee992113047f7bae14501bfdce",
+    "kit/NOTICE.md": "9125790902c878ee845e89aa4c187ccbb4ee9c4861b9c3dbd572426bea9e210b",
+    "kit/README.md": "ae15ee3614802d446b11d29efcf3a1b077652ffa13a3faaa2c475712064285c8",
+    "kit/soma_runtime/__init__.py": "825bf697f5a2fc690e9dced236149aa9a2f24e6b269b9bfb4176e684cd088502",
+    "kit/soma_runtime/__main__.py": "3d2438ae92f4746e9ffaa1f837b1fe803f6281091d1f31f8c95643716f257d9a",
+    "kit/soma_runtime/adapters/__init__.py": "dbbb206c72f38e3321ca09e4792f421a9005e810e0db29f5045db157f58c7441",
+    "kit/soma_runtime/adapters/archive.py": "197e0b497db0b92a091ae31c09ce4462d9873ce38e8be8429383c274a4cb1a5d",
+    "kit/soma_runtime/adapters/diff.py": "ff17298db39a358c671a945daf0f1af2c908441516ed31684505093e364c83c9",
+    "kit/soma_runtime/cli.py": "0fd436bb0e4df1aba57741803d406c75ae4ffef02d3e01006f926ca865d53517",
+    "kit/soma_runtime/core.py": "98a9444ffed3b3475d9efbf9d66f89c55083f434305b886859d4763ad37f4471",
+    "kit/soma_runtime/sensors_v1.py": "278c17c0803c59152c507dab24e538da5de6e964b3f6e43481f18329b1fa7bab",
+    "kit/tests/__init__.py": "73b44aec3d27754b72ce0529cbe872cf12195e8eecc48c03302fc541dcfba311",
+    "kit/tests/test_archive.py": "3f3ca4d0900bc8200274138c1d9b9b3546406793b3e4ae4292bc9cd1b1f6ac3d",
+    "kit/tests/test_core.py": "dd62c6401135a114b870467597cf5a990e8142c6edbacf993d4050f99fe1e13a",
+    "kit/tests/test_diff.py": "77a4f8895ff7a4d8f0a06ce3202fec2d85b5d713079bd5e2a0fcfb5e31dfec50",
+    "kit/tests/test_workflow.py": "e953e2123f3a8a4d4c1ad34b34ec44e95cfe37f28c8cb1d0f5a64fdc3d6706ce",
+    "kit/verification/oracles.py": "d55528067905e1820d68e7499ba3767b511d0042f392a4434e0ac1ac4de0cb32",
+    "kit/verification/test_oracles.py": "b064b2fbcb48b9f2ef8e42b2c2299a24c4e44748026804482f1887fd67749875",
+    "kit/WORKFLOW.md": "dd1320e71bba0927152844188f09f6fa9bf7f2e5710125c48b194b705bca27d9",
+    "kit/workflow.py": "d2caa372a422f50a345006406aac7e87190fd328364b7af2e282a4e6fab8d002"
+  },
+  "engineering_candidate_25_files": "7fe320a0103b508ddf6b99fa406443b958480f37e1341a9e2d1e3d8e59ce9e7f",
+  "status": "PRET_POUR_LIVRAISON_GLOBALE",
+  "global_A": "APPROVE_GLOBAL_DESIGN_WITH_CORRECTIONS",
+  "global_A_design_id": "ed65061fa6a88633a887d1c05a748e1d84bb1ccd185a0f9f6a8994a744be0135",
+  "actual_model_workflow_candidate": "ab752ee97455e6d855a8b7dcc2944b118c66b4a74572bd1287b5b291d0b33a37",
+  "model_workflow_results": {
+    "D1": "PASS_3_DECISIONS",
+    "D2": "FAILED_MISTYPED_OBSERVATION_ID_REFUSED_WITHOUT_EFFECT"
+  },
+  "corrected_candidate_replay": "D1_3_RECORDED_DECISIONS_PASS_10_ARTIFACTS_IDENTICAL_NO_NEW_MODEL",
+  "comparative_superiority": "NOT_ESTABLISHED",
+  "external_human_or_institutional_validation": false,
+  "publication": {
+    "receipt_embedded": false,
+    "planned_repository": "mohammedmessaoudene-cmd/soma-mcp-research",
+    "planned_branch": "cooperative-kit",
+    "planned_tag": "v0.5.0-research",
+    "receipt_location": "GitHub release metadata and separate downloaded-asset verification",
+    "archive_is_not_itself_proof_of_publication": true
+  },
+  "reuse_license": "NOT_DECLARED",
+  "global_B": {
+    "verdict": "PRET_POUR_LIVRAISON_GLOBALE",
+    "packet_id": "SOMA-V2-B-GLOBALE-20261120-001",
+    "channel": "DISTINCT_NATIVE_AGENT_FALLBACK_UNDER_MANDATE_V2_SECTION_10",
+    "external_ChatGPT_B_received": false,
+    "review_sha256": "d9dfbfa10d9f07fec8b02eac6ac294e3b7025f8c07135f26837ec44592fe50bb",
+    "scope": "Full local cooperative kit G1-G6; remote delivery verification remains a separate receipt"
+  }
+}

@@ -1,0 +1,6 @@
+lot: C18
+capteur Aécho stablevalide
+offset: +3
+gain: 0.992
+poste: quai
+visa: initial

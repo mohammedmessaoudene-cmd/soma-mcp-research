@@ -1,0 +1,6 @@
+lot: C19
+capteur Bétalon stablevalide
+offset: -2
+gain: 1.006
+poste: banc
+visa: final
